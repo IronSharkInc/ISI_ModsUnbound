@@ -1,0 +1,9 @@
+<configs>
+
+    <!-- allow mods to be installed in everything -->
+    <set xpath="//item_modifiers/item_modifier/@installable_tags">melee,ranged,armor,vehicle,drone </set>
+    
+    <!-- allow mods to stack (and not block similar mods) -->
+    <removeattribute xpath="//item_modifiers/item_modifier/@modifier_tags" />
+
+</configs>

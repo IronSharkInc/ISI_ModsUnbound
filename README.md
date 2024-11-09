@@ -1,4 +1,4 @@
-# ISI Template
+# ISI Mods Unbound
 
 A 7 Days to Die (7D2D) mod that allows use you to use any mod on any thing. It also removes the restrictions on similar mods, and allows you to stack mods:
 

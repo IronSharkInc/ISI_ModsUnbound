@@ -1,9 +1,13 @@
 <configs>
 
-    <!-- allow mods to be installed in everything -->
-    <set xpath="//item_modifiers/item_modifier/@installable_tags">melee,ranged,armor,vehicle,drone </set>
-    
-    <!-- allow mods to stack (and not block similar mods) -->
+    <!-- Allow mods to be installed in everything... -->
+    <!-- ...except drones. Red console errors popped up when trying to install drone mods in armor. -->
+    <set xpath="//item_modifiers/item_modifier[not (contains(@installable_tags, 'drone'))]/@installable_tags">melee,ranged,armor,vehicle</set>
+
+    <!-- Allow mods to stack -->
     <removeattribute xpath="//item_modifiers/item_modifier/@modifier_tags" />
+
+    <!-- Remove restrictions (e.g., install Customized Fitting Mods in Light Armor) -->
+    <removeattribute xpath="//item_modifiers/item_modifier/@blocked_tags" />
 
 </configs>

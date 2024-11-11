@@ -3,7 +3,7 @@
 	<Name value="ISI-Mods-Unbound" />
 	<DisplayName value="ISI Mods Unbound" />
 	<Version value="1.1.0.0" />
-	<Description value="Use any mod on any thing (weapon, armor, or vehicle). Mods can stack." />
+	<Description value="Install any mod on any thing. Mods can stack. Using one mod no longer excludes similar mods." />
 	<Author value="IronSharkInc" />
 	<Website value="https://github.com/IronSharkInc" />
 </xml>

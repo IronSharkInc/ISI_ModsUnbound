@@ -26,10 +26,10 @@ Please drop a comment if you find a fun combination (so others can try it out).
   - Stacks: Full Auto Mods, Pocket Mods, Attribute Mods, etc.,
   - Does not stack: Impact Bracing Mod
 - Drone Mods Are Still Restricted
-  - Installing Drone Mods in Armor triggered Red Errors in the Console so I left those restrticted.
+  - Installing Drone Mods in Armor triggered Red Errors in the Console so I left those restricted.
 - Mods with no effects
   - Some mods do not do anything if installed on something it wasn't designed for. I think this is because the effect was added to the item rather than the mod itself.
-  - Example: Installing a Motor Tool Tank Mod on a Motorcyle does not increase the size of the gas tank
+  - Example: Installing a Motor Tool Tank Mod on a Motorcycle does not increase the size of the gas tank
 
 ## My Other Mods
 

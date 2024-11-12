@@ -2,10 +2,11 @@
 
     <!-- Allow mods to be installed in everything... -->
     <!-- ...except drones. Red console errors popped up when trying to install drone mods in armor. -->
-    <set xpath="//item_modifiers/item_modifier[not (contains(@installable_tags, 'drone'))]/@installable_tags">melee,ranged,armor,vehicle</set>
+    <set xpath="//item_modifiers/item_modifier[not (contains(@installable_tags, 'drone'))]/@installable_tags">melee,ranged,armor,vehicle </set>
 
     <!-- Allow mods to stack -->
-    <removeattribute xpath="//item_modifiers/item_modifier/@modifier_tags" />
+    <!-- Dye needs to retain the 'dye' modifier_tags so it can be installed in the Cosmetic Slot instead of taking up a Modifier Slot -->
+    <removeattribute xpath="//item_modifiers/item_modifier[not(contains(@modifier_tags, 'dye'))]/@modifier_tags" />
 
     <!-- Remove restrictions (e.g., install Customized Fitting Mods in Light Armor) -->
     <removeattribute xpath="//item_modifiers/item_modifier/@blocked_tags" />

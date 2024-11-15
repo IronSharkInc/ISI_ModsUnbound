@@ -16,7 +16,8 @@
     <removeattribute
         xpath="//item_modifiers/item_modifier[
             not(contains(@modifier_tags, 'dye'))
-            and not(starts-with(@name, 'modVehicle')) 
+            and not(starts-with(@name, 'modVehicle'))
+            and not(contains(@modifier_tags, 'scope')) 
         ]/@modifier_tags" />
 
     <!-- Remove restrictions (e.g., install Customized Fitting Mods in Light Armor) -->

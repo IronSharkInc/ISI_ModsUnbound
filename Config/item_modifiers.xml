@@ -13,12 +13,16 @@
     <!-- Allow mods to stack -->
     <!-- ... except dyes. Dyes needs to retain the 'dye' modifier_tag so it can be installed in the Cosmetic Slot instead of taking up a Modifier Slot -->
     <!-- ... except vehicles. The visual effect as well as the actual buff is tied to the presence of the modifier_tags -->
-    <removeattribute
-        xpath="//item_modifiers/item_modifier[
+    <!-- ... droneStorage: Set the tag to droneStorage because that is the only mod I know of that the game allows to stack. Originally I achieved this 
+     effect by removing modifier_tags entirely (the game does not allow you to install mods with the same tag), but that broke the shift+click shortcut 
+     for installing mods. This way we can use shift+click to install mods again. -->
+    <set xpath="//item_modifiers/item_modifier[
             not(contains(@modifier_tags, 'dye'))
             and not(starts-with(@name, 'modVehicle'))
             and not(contains(@modifier_tags, 'scope')) 
-        ]/@modifier_tags" />
+        ]/@modifier_tags">
+        droneStorage
+    </set>
 
     <!-- Remove restrictions (e.g., install Customized Fitting Mods in Light Armor) -->
     <removeattribute xpath="//item_modifiers/item_modifier/@blocked_tags" />

@@ -19,14 +19,12 @@ Please drop a comment if you find a fun combination (so others can try it out).
 
 ## Caveats
 
-- Use Drag and Drop
-  - Shift + Click may not let you add a mod, but dragging and dropping the mod will
+- Drone Mods Cannot Be Installed In Armor
+  - Installing Drone Mods in Armor triggered Red Errors in the Console so I left those restricted. But you can now install any mod into a drone, and you can install drone mods into anything except armor.
 - Stackable Mods vs Stackable Effects
   - While the game will let you stack any mod, sometimes the actual effects do not stack
   - Stacks: Full Auto Mods, Pocket Mods, Attribute Mods, etc.,
   - Does not stack: Impact Bracing Mod
-- Drone Mods Are Still Restricted
-  - Installing Drone Mods in Armor triggered Red Errors in the Console so I left those restricted.
 - Mods with no effects
   - Some mods do not do anything if installed on something it wasn't designed for. I think this is because the effect was added to the item rather than the mod itself.
   - Example: Installing a Motor Tool Tank Mod on a Motorcycle does not increase the size of the gas tank

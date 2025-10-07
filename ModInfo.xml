@@ -2,7 +2,7 @@
 <xml>
 	<Name value="ISI-Mods-Unbound" />
 	<DisplayName value="ISI Mods Unbound" />
-	<Version value="2.4.0.1" />
+	<Version value="2.4.0.2" />
 	<Description value="Install any mod on any thing. Mods can stack. Using one mod no longer excludes similar mods." />
 	<Author value="IronSharkInc" />
 	<Website value="https://github.com/IronSharkInc" />

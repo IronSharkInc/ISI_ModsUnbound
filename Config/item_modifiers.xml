@@ -26,4 +26,17 @@
     <!-- ...for example allow Barel Extenders to be installed in Shotguns -->
     <removeattribute xpath="//item_modifiers/item_modifier/@blocked_tags" />
 
+
+    <!-- GAME BREAKERS -->
+    <!-- Burst and Full Auto Triggers break Bows: 
+     
+    After one shot, ammo displays as negative and you can't
+    reload without switching ammo types. Eventually the game crashes. Attempting to reload the save 
+    results in a crash after that point.
+    
+    Semi Auto Triggers are fine. I believe the issue is setting BurstRoundCount above 1. 
+     -->
+    <setattribute xpath="//item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3']" name="blocked_tags">perkArchery</setattribute>
+    <setattribute xpath="//item_modifiers/item_modifier[[@name='modGunTriggerGroupAutomatic']" name="blocked_tags">perkArchery</setattribute>
+
 </configs>

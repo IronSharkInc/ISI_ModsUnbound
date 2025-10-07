@@ -17,17 +17,22 @@ Please drop a comment if you find a fun combination (so others can try it out).
 ![chainsaw with four full auto mods](images/chainsaw.png)
 ![m60 with barrel extender and silencer mods](images/m60.png)
 
-## Caveats
+## Somewhat Bound
 
-- Drone Mods Cannot Be Installed In Armor
-  - Installing Drone Mods in Armor triggered Red Errors in the Console so I left those restricted. But you can now install any mod into a drone, and you can install drone mods into anything except armor.
-- Stackable Mods vs Stackable Effects
+- Full Auto and Burst Trigger Mods cannot be installed on any type of Bow.
+  - Bows could not be reloaded after a single shot, and eventually the game would crash and corrupt the save.
+- Drone mods cannot be installed in Armor.
+  - Attempting to put Drone mods in Armor interrupts the game, opening a console full of red errors.
+
+## Other Notes
+
+- Mods with no effect
+  - Some mods do not do anything if installed on something it wasn't designed for.
+  - Example: Installing a Motor Tool Tank Mod on a Motorcycle does not increase the size of the gas tank
+- Stackable Effects
   - While the game will let you stack any mod, sometimes the actual effects do not stack
   - Stacks: Full Auto Mods, Pocket Mods, Attribute Mods, etc.,
   - Does not stack: Impact Bracing Mod
-- Mods with no effects
-  - Some mods do not do anything if installed on something it wasn't designed for. I think this is because the effect was added to the item rather than the mod itself.
-  - Example: Installing a Motor Tool Tank Mod on a Motorcycle does not increase the size of the gas tank
 
 ## My Other Mods
 

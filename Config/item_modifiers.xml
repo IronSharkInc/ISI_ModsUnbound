@@ -36,7 +36,20 @@
     
     Semi Auto Triggers are fine. I believe the issue is setting BurstRoundCount above 1. 
      -->
-    <setattribute xpath="//item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3']" name="blocked_tags">perkArchery</setattribute>
-    <setattribute xpath="//item_modifiers/item_modifier[@name='modGunTriggerGroupAutomatic']" name="blocked_tags">perkArchery</setattribute>
+    <remove xpath="//item_modifier[
+            @name='modGunTriggerGroupBurst3' 
+            or @name='modGunTriggerGroupAutomatic'
+        ]/effect_group/passive_effect[@name='BurstRoundCount']" />
+    
+    <append xpath="item_modifier[@name='modGunTriggerGroupBurst3']/effect_group">
+        <passive_effect name="BurstRoundCount" operation="base_set" value="3">
+            <requirement name="!HoldingItemHasTags" tags="perkArchery"/>
+        </passive_effect>
+    </append>
+    <append xpath="item_modifier[@name='modGunTriggerGroupAutomatic']/effect_group">
+        <passive_effect name="BurstRoundCount" operation="base_set" value="999">
+            <requirement name="!HoldingItemHasTags" tags="perkArchery"/>
+        </passive_effect>
+    </append>
 
 </configs>

@@ -19,8 +19,9 @@ Please drop a comment if you find a fun combination (so others can try it out).
 
 ## Somewhat Bound
 
-- Full Auto and Burst Trigger Mods cannot be installed on any type of Bow.
-  - Bows could not be reloaded after a single shot, and eventually the game would crash and corrupt the save.
+- Full Auto and Burst Trigger Mods have minimal effect on Bows.
+  - Initially Bows could not be reloaded after a single shot, and eventually the game would crash and corrupt the save.
+  - I disabled the feature causing the bug on bows, so you can install them now w/o crashing. They just won't do much.
 - Drone mods cannot be installed in Armor.
   - Attempting to put Drone mods in Armor interrupts the game, opening a console full of red errors.
 

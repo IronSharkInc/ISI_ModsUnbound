@@ -41,12 +41,12 @@
             or @name='modGunTriggerGroupAutomatic'
         ]/effect_group/passive_effect[@name='BurstRoundCount']" />
     
-    <append xpath="item_modifier[@name='modGunTriggerGroupBurst3']/effect_group">
+    <append xpath="//item_modifier[@name='modGunTriggerGroupBurst3']/effect_group">
         <passive_effect name="BurstRoundCount" operation="base_set" value="3">
             <requirement name="!HoldingItemHasTags" tags="perkArchery"/>
         </passive_effect>
     </append>
-    <append xpath="item_modifier[@name='modGunTriggerGroupAutomatic']/effect_group">
+    <append xpath="//item_modifier[@name='modGunTriggerGroupAutomatic']/effect_group">
         <passive_effect name="BurstRoundCount" operation="base_set" value="999">
             <requirement name="!HoldingItemHasTags" tags="perkArchery"/>
         </passive_effect>

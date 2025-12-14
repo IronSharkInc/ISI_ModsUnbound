@@ -20,8 +20,8 @@ Please drop a comment if you find a fun combination (so others can try it out).
 ## Somewhat Bound
 
 - Full Auto and Burst Trigger Mods have minimal effect on Bows.
-  - Initially Bows could not be reloaded after a single shot, and eventually the game would crash and corrupt the save.
-  - I disabled the feature causing the bug on bows, so you can install them now w/o crashing. They just won't do much.
+  - Originally, installing these mods on bows caused reload issues and eventual game crashes/corrupted saves.
+  - I determined that raising the BurstRoundCount above 1 was causing the bug, so I disabled that effect so that we could safely install those mods on bows.
 - Drone mods cannot be installed in Armor.
   - Attempting to put Drone mods in Armor interrupts the game, opening a console full of red errors.
 
@@ -35,8 +35,10 @@ Please drop a comment if you find a fun combination (so others can try it out).
   - Stacks: Full Auto Mods, Pocket Mods, Attribute Mods, etc.,
   - Does not stack: Impact Bracing Mod
 
-## My Other Mods
+## Testing
 
-If you like this mod, you might like my other mods:
-
-<https://next.nexusmods.com/profile/IronSharkInc/mods?gameId=1059>
+1. Install incompatible mods together (e.g., Barrel Extender + Silencer)
+2. Stack multiple identical mods (e.g., 4x Full Auto on M60)
+3. Install weapon mods on armor, tools, vehicles, and drones
+4. Test Bow compatibility - install Burst/Full Auto mods on bows to confirm no crashes
+5. Test Drone mod restriction - confirm drone mods cannot be installed in armor
